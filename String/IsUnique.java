@@ -3,7 +3,7 @@
 //  Implement an algorithm to determine if a string has all unique characters. What if you cannot use additional datastructure.
 //
 
-public class Main {
+public class IsUnique {
     //Solution when additional data structure is applicable
     public static boolean IsAllUnique(String word) {
         if (word.length() > 128) return false;
