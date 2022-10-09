@@ -8,7 +8,7 @@ Stats for Merge Sort
     10,000             2
     100,000            13
     1,000,000          84
-    10,000,000         631    :) [DO NOT TRY THIS SIZE WITH O(n^2) Algorithm]
+    10,000,000         631    :) [WARNING: DO NOT TRY THIS SIZE WITH O(n^2) ALGORITHM]
 
 PC Specification: i9 12th Gen
 */
