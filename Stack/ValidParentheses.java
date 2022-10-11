@@ -30,7 +30,7 @@ Constraints:
 s consists of parentheses only '()[]{}'.
 */
 
-class Solution {
+class ValidParentheses {
     public boolean isValid(String s) {
         Stack<Character> stk = new Stack<>();
         boolean flag = true;
