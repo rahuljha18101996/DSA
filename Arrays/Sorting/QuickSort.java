@@ -1,4 +1,16 @@
-package Arrays.Sorting;
+/*
+Stats for Quick Sort
+
+    Input Size       Time(ms)
+    10                  0
+    100                 0
+    1,000               0
+    10,000              2
+    100,000             15
+    1,000,000           75
+    10,000,000          775
+PC Specification: i9 12th Gen
+*/
 
 public class QuickSort {
     private static void divide(int[] a, int low,int high) {
@@ -35,9 +47,12 @@ public class QuickSort {
     }
 
     public static void main(String[] args) {
-        int n = 1000;
+        int n = 10000000;
         int[] array = new int[n];
-        for (int i = 0; i < array.length; i++) array[i] = n--;
+        /*
+            Note that: when sorted randomly gives better performance
+        */
+        for (int i = 0; i < array.length; i++) array[i] = (int)(Math.random() * n);
         //printArray(array,'f');
         long t1 = System.currentTimeMillis();
         divide(array,0,array.length - 1);
@@ -46,15 +61,3 @@ public class QuickSort {
         System.out.printf("Time taken to sort array is %d ms%n",t1);
     }
 }
-
-/*
-Stats for Merge Sort
-
-    Input Size      Time(ms)
-    10               0
-    100              0
-    1,000            2
-    10,000           30
-    100,000          Program Crashed
-PC Specification: i9 12th Gen
-*/
